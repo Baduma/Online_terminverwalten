@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin Home</title>
+	</head>
+
+	<body bgcolor="lightblue">
+		<form name="form"  align="down" action="daten_anzeigen.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend><h3>Termin bearbeiten</h3></legend>
+				<br /><br />
+				<input type="submit" name="submit" value="Datens&auml;tze zu bearbeiten anzeigen" class="button" />
+			</fieldset>
+		</form>
+	
+	
+		<form name="form"  align="down" action="admin.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend><h3>Kalenderwoche anlegen</h3></legend>
+				Tabelle zu erstellen: (1 bis 52)<input type="text" name="woche_nummer_an" class="small" value="" />
+				<br /><br />
+				<input type="submit" name="submit" value="Kalenderwoche anlegen" class="button" />
+				<input type="hidden" name="vorgang" value="anlegen">
+			</fieldset>
+		</form>
+	
+		<form name="form"  align="down" action="admin.php" method="post" enctype="multipart/form-data">
+			<fieldset>
+				<legend><h3>Kalenderwoche l&ouml;schen</h3></legend>
+				Zu l&ouml;schende Kalenderwoche: (1 bis 52) <input type="text" name="woche_nummer_aus" class="small" value="" />
+				<br /><br />
+				<input type="submit" name="submit" value="Kalenderwoche l&ouml;schen" class="button" />
+				<input type="hidden" name="vorgang" value="delete">
+			</fieldset>
+		</form>
+	</body>
+</html>
